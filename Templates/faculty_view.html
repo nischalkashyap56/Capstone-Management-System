@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty View</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% set faculty_logged_in_srn = session['faculty_srn'] %}
+
+    <h1>Welcome, {{ faculty_logged_in_srn }}</h1>
+    <h1>Faculty View</h1>
+
+    <h2>Assigned Teams</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Team ID</th>
+                <th>Project Domain</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in faculty_teams %}
+                <tr>
+                    <td>{{ team['team_id'] }} &nbsp &nbsp : &nbsp &nbsp </td>
+                    <td>{{ team['project_domain'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

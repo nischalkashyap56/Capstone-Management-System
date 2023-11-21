@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Results</title>
+    <!-- Add any required CSS or styling here -->
+</head>
+<body>
+    <h1>Add Results</h1>
+    <form action="/faculty_results" method="POST">
+        <label for="student_srn">SRN:</label>
+        <input type="text" name="student_srn" required /><br />
+
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester" required><br>
+
+        <label for="isa1_marks">ISA 1 Marks:</label>
+        <input type="text" id="isa1_marks" name="isa1_marks" required><br>
+
+        <label for="isa2_marks">ISA 2 Marks:</label>
+        <input type="text" id="isa2_marks" name="isa2_marks" required><br>
+
+        <label for="esa_marks">ESA Marks:</label>
+        <input type="text" id="esa_marks" name="esa_marks" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/faculty_signup" method="post">
+        <h2>Faculty Sign Up</h2>
+        
+        <label for="faculty_srn">SRN:</label>
+        <input type="text" id="faculty_srn" name="faculty_srn" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation" required>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+        </select>
+
+        <label for="faculty_department">Department:</label>
+        <select id="faculty_department" name="faculty_department" required>
+            <option value="CSE">CSE</option>
+            <option value="AIML">AIML</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="BT">BT</option>
+            <option value="ME">ME</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+
+        <label for="faculty_domain">Domain:</label>
+        <input type="text" id="faculty_domain" name="faculty_domain" required>
+
+        <label for="faculty_phone_no">Phone Number:</label>
+        <input type="text" id="faculty_phone_no" name="faculty_phone_no" required>
+
+        <label for="faculty_email">Email:</label>
+        <input type="email" id="faculty_email" name="faculty_email" required>
+
+        <label for="faculty_password">Password:</label>
+        <input type="password" id="faculty_password" name="faculty_password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>

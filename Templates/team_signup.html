@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Sign Up</title>
+    <style>
+      .student-section {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Team Sign Up</h1>
+    <form action="/team_signup" method="post">
+      <!-- Student 1 Section -->
+      <div class="student-section">
+        <h2>Student 1</h2>
+        <label for="student1_srn">SRN:</label>
+        <input type="text" name="student1_srn" required /><br />
+
+        <label for="student1_cgpa">CGPA:</label>
+        <input type="text" name="student1_cgpa" required /><br />
+
+        <label for="student1_first_name">First Name:</label>
+        <input type="text" name="student1_first_name" required /><br />
+
+        <label for="student1_last_name">Last Name:</label>
+        <input type="text" name="student1_last_name" required /><br />
+
+        <label for="student1_department">Department:</label>
+        <select name="student1_department" required>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="BT">BT</option>
+          <option value="ME">ME</option>
+          <option value="CIVIL">CIVIL</option>
+          </select
+        ><br />
+
+        <label for="student1_email">Email:</label>
+        <input type="email" name="student1_email" required /><br />
+
+        <label for="student1_phone">Phone:</label>
+        <input type="text" name="student1_phone" required /><br />
+      </div>
+
+      <!-- Student 2 Section -->
+      <div class="student-section">
+        <h2>Student 2</h2>
+        <label for="student2_srn">SRN:</label>
+        <input type="text" name="student2_srn" required /><br />
+
+        <label for="student2_cgpa">CGPA:</label>
+        <input type="text" name="student2_cgpa" required /><br />
+
+        <label for="student2_first_name">First Name:</label>
+        <input type="text" name="student2_first_name" required /><br />
+
+        <label for="student2_last_name">Last Name:</label>
+        <input type="text" name="student2_last_name" required /><br />
+
+        <label for="student2_department">Department:</label>
+        <select name="student2_department" required>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="BT">BT</option>
+          <option value="ME">ME</option>
+          <option value="CIVIL">CIVIL</option>
+          </select
+        ><br />
+
+        <label for="student2_email">Email:</label>
+        <input type="email" name="student2_email" required /><br />
+
+        <label for="student2_phone">Phone:</label>
+        <input type="text" name="student2_phone" required /><br />
+      </div>
+
+      <!-- Student 3 Section -->
+      <div class="student-section">
+        <h2>Student 3</h2>
+        <label for="student3_srn">SRN:</label>
+        <input type="text" name="student3_srn" required /><br />
+
+        <label for="student3_cgpa">CGPA:</label>
+        <input type="text" name="student3_cgpa" required /><br />
+
+        <label for="student3_first_name">First Name:</label>
+        <input type="text" name="student3_first_name" required /><br />
+
+        <label for="student3_last_name">Last Name:</label>
+        <input type="text" name="student3_last_name" required /><br />
+
+        <label for="student3_department">Department:</label>
+        <select name="student3_department" required>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="BT">BT</option>
+          <option value="ME">ME</option>
+          <option value="CIVIL">CIVIL</option></select
+        ><br />
+
+        <label for="student3_email">Email:</label>
+        <input type="email" name="student3_email" required /><br />
+
+        <label for="student3_phone">Phone:</label>
+        <input type="text" name="student3_phone" required /><br />
+      </div>
+
+      <!-- Student 4 Section -->
+      <div class="student-section">
+        <h2>Student 4</h2>
+        <label for="student4_srn">SRN:</label>
+        <input type="text" name="student4_srn" required /><br />
+
+        <label for="student4_cgpa">CGPA:</label>
+        <input type="text" name="student4_cgpa" required /><br />
+
+        <label for="student4_first_name">First Name:</label>
+        <input type="text" name="student4_first_name" required /><br />
+
+        <label for="student4_last_name">Last Name:</label>
+        <input type="text" name="student4_last_name" required /><br />
+
+        <label for="student4_department">Department:</label>
+        <select name="student4_department" required>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="BT">BT</option>
+          <option value="ME">ME</option>
+          <option value="CIVIL">CIVIL</option></select
+        ><br />
+
+        <label for="student4_email">Email:</label>
+        <input type="email" name="student4_email" required /><br />
+
+        <label for="student4_phone">Phone:</label>
+        <input type="text" name="student4_phone" required /><br />
+      </div>
+      
+      <div class="team-info-section">
+        <h2>Team Information</h2>
+
+        <label for="faculty_srn">Faculty Mentor SRN :</label>
+        <input type="text" id="faculty_srn" name="faculty_srn" required><br>
+
+        <label for="project_domain">Project Domain:</label>
+        <input type="text" id="project_domain" name="project_domain" required><br>
+
+        <label for="problem_statement">Problem Statement:</label>
+        <textarea id="problem_statement" name="problem_statement" rows="4" required></textarea><br>
+
+        <label for="team_password">Team Password:</label>
+        <input type="password" id="team_password" name="team_password" required><br>
+    </div>
+      <input type="submit" value="Sign Up" />
+    </form>
+  </body>
+</html>
