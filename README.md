@@ -6,7 +6,7 @@ A capstone management system that uses HTML, CSS MySQL and Flask to implement fu
 Clone this repository to your system with the following command in your Git GUI:
 
 ```
-git clone https://github.com/nischalkashyap56/Plagiarism-Checker.git
+git clone https://github.com/nischalkashyap56/Capstone-Management-System.git
 ```
 
 ## Functionalities
