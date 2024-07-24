@@ -1,7 +1,17 @@
 # Capstone-Management-System
 A capstone management system that uses HTML, CSS MySQL and Flask to implement functionalities to effectively manage capstone projects across branches for an academic institution.
 
+## Installation
+
+Clone this repository to your system with the following command in your Git GUI:
+
+```
+git clone https://github.com/nischalkashyap56/Plagiarism-Checker.git
+```
+
+## Functionalities
 The following project is implemented using Python programming language. Some of the functionalities implemented are :
+```
 1. Registration of new students
 2. Registration of new teams
 3. Registration of faculty
@@ -11,3 +21,4 @@ The following project is implemented using Python programming language. Some of 
 7. View teams under a faculty
 8. Remove a faculty from the database
 9. Calculate average score of a student across all tests
+```
